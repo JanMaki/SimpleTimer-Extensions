@@ -9,8 +9,23 @@ idInputElement.value = id
 
 //定期的に処理をするタスク
 const task = function(){
+
     //入力欄の値を取得
-    const input = idInputElement.value
+    const input = idInputElement.value.trim()
+    //入力の内容が数値かを確認
+    if (isNaN(input)) {
+        //アラートを出す
+        document.getElementById("alert").innerHTML = "IDの形式が無効です"
+        //1~4を確認
+        for (let i = 1; i < 5; i++){
+            //時間を00:00にする
+            document.getElementById("timer-"+i).innerHTML = "<h2>00:00</h2>"
+        }
+        return
+    }else {
+        //アラートを消す
+        document.getElementById("alert").innerHTML = ""
+    }
     //入力欄が更新されているかを確認
     if (input !== id){
         //IDを変更
@@ -41,9 +56,6 @@ const task = function(){
                 document.getElementById("timer-"+i).innerHTML = "<h2>00:00</h2>"
             }
         }else {
-            //アラートを削除
-            document.getElementById("alert").innerHTML = ""
-
             //0~3を確認
             for (let i = 0; i < 4; i++) {
                 //タイマーの情報を取得
