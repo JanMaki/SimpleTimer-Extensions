@@ -13,7 +13,7 @@ const task = function(){
     //入力欄の値を取得
     const input = idInputElement.value.trim()
     //入力の内容が数値かを確認
-    if (isNaN(input)) {
+    if (isNaN(input) || (input.length > 0 && input.length < 18)) {
         //アラートを出す
         document.getElementById("alert").innerHTML = "IDの形式が無効です"
         //1~4を確認
