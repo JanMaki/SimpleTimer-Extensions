@@ -3,9 +3,10 @@ let id = localStorage.getItem("ID")
 
 //IDの入力欄を取得
 const idInputElement = document.getElementById("id_input")
-
 //入力欄の値にIDを代入
 idInputElement.value = id
+//カーソルを入れる
+idInputElement.focus()
 
 //定期的に処理をするタスク
 const task = function(){
