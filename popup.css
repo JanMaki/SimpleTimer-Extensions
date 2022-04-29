@@ -1,9 +1,10 @@
 body {
     background: #36393E;
 }
+
 h1 {
     font-size: 30px;
-    position: center;
+    text-align: center;
     color: #FFFFF4;
 }
 h2 {
@@ -13,6 +14,14 @@ h2 {
     font-size: 25px;
     padding-left: 10px;
     padding-bottom: 5px;
+}
+
+input {
+    outline: #40444A solid 1px;
+    font-size: 20px;
+    border:solid 0;
+    background: #40444A;
+    color: #B9BBBE;
 }
 
 .one {
