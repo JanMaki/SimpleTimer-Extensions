@@ -6,5 +6,10 @@
   "browser_action": {
     "default_title": "SimpleTimer-Extensions",
     "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icon/icon16.png",
+    "48": "icon/icon48.png",
+    "128": "icon/icon128.png"
   }
 }
