@@ -1,0 +1,38 @@
+body {
+    background: #36393E;
+}
+h1 {
+    font-size: 30px;
+    position: center;
+    color: #FFFFF4;
+}
+h2 {
+    outline: #202225 solid 1px;
+    border-radius: 1px;
+    background: #2F3136;
+    font-size: 25px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.one {
+    color: #B9BBBE;
+}
+
+.two {
+    color: #b7852b;
+}
+
+.three {
+    color: #0390cd;
+}
+
+.four {
+    color: #cd4327;
+}
+
+
+
+.alert {
+    color: white;
+}
