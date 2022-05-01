@@ -49,14 +49,14 @@ const task = function(){
         //タイマーがあるかを確認
         if (timers.length === 0 && id !== ""){
             //アラートを出す
-            document.getElementById("alert").innerHTML = "無効なIDです"
+            document.getElementById("alert").innerHTML = "タイマーが動いていないか無効なIDです"
 
             //1~4を確認
             for (let i = 1; i < 5; i++){
                 //時間を00:00にする
                 document.getElementById("timer-"+i).innerHTML = "<h2>00:00</h2>"
             }
-        }else {
+        }else if (timers.length !== 0) {
             //0~3を確認
             for (let i = 0; i < 4; i++) {
                 //タイマーの情報を取得
