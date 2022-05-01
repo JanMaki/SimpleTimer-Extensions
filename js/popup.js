@@ -12,7 +12,8 @@ idInputElement.focus()
 const task = function(){
 
     //入力欄の値を取得
-    const input = idInputElement.value.trim()
+    const input = idInputElement.value
+
     //入力の内容が数値かを確認
     if (isNaN(input) || (input.length > 0 && input.length < 18)) {
         //アラートを出す
@@ -33,6 +34,11 @@ const task = function(){
         id = input
         //IDを保存
         localStorage.setItem("ID", id)
+    }
+
+    //空白のときは終わり
+    if (id === ""){
+        return;
     }
 
     //リクエストを作成
