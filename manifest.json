@@ -1,7 +1,7 @@
 {
   "name": "SimpleTimer-Extensions",
-  "version": "1.0.0-alpha",
-  "manifest_version": 2,
+  "version": "1.0.0",
+  "manifest_version": 3,
   "description": "SimpleTimerのChrome拡張機能",
   "browser_action": {
     "default_title": "SimpleTimer-Extensions",
