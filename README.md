@@ -5,7 +5,7 @@ Discord上で動かしているタイマーの時間をブラウザ上で確認�
 
 ## 導入方法
 ### Chromeウェブストアからの導入
-1. [ChromeウェブストアのSimpleTimer-Extentionsのページ](https://chromestore.extensions.simpletimer.dev
+1. [ChromeウェブストアのSimpleTimer-Extentionsのページ](https://chromestore.ext.simpletimer.dev
 )移動します
 2. 青色のChromeに追加ボタンを押します
 ### ファイルをダウンロードして導入（パソコンがある程度わかる方向け）
