@@ -54,5 +54,5 @@ Discord上で動かしているタイマーの時間をブラウザ上で確認�
 もし中身がない時は、`time.google.com`を使用します
 5. "ターミナル"アプリを開く
 6. `sudo sntp -sS <address>`を実行する（`<address>`の部分は3.で確認した文字列に変更してください）  
-7.例： `sudo sntp -sS time.google.com`
+  例： `sudo sntp -sS time.google.com` 
   この際、パスワードの入力などを求められる場合があります。
