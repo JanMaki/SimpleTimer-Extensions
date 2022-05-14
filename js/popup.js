@@ -9,7 +9,7 @@ idInputElement.value = id
 idInputElement.focus()
 
 //定期的に処理をするタスク
-const task = function(){
+const task = function () {
 
     //入力欄の値を取得
     const input = idInputElement.value
@@ -19,17 +19,17 @@ const task = function(){
         //アラートを出す
         document.getElementById("alert").innerHTML = "IDの形式が無効です"
         //1~4を確認
-        for (let i = 1; i < 5; i++){
+        for (let i = 1; i < 5; i++) {
             //時間を00:00にする
-            document.getElementById("timer-"+i).innerHTML = "<h2>00:00</h2>"
+            document.getElementById("timer-" + i).innerHTML = "<h2>00:00</h2>"
         }
         return
-    }else {
+    } else {
         //アラートを消す
         document.getElementById("alert").innerHTML = ""
     }
     //入力欄が更新されているかを確認
-    if (input !== id){
+    if (input !== id) {
         //IDを変更
         id = input
         //IDを保存
@@ -37,14 +37,14 @@ const task = function(){
     }
 
     //空白のときは終わり
-    if (id === ""){
+    if (id === "") {
         return;
     }
 
     //リクエストを作成
     const request = new XMLHttpRequest()
     //接続の設定
-    request.open("GET", "http://163.44.249.67:8080/timers/"+id, true)
+    request.open("GET", "http://163.44.249.67:8080/timers/" + id, true)
     request.responseType = "json"
     //完了時の処理
     request.onload = function () {
@@ -53,16 +53,16 @@ const task = function(){
         //タイマーのデータを取得
         const timers = data["timers"]
         //タイマーがあるかを確認
-        if (timers.length === 0 && id !== ""){
+        if (timers.length === 0 && id !== "") {
             //アラートを出す
             document.getElementById("alert").innerHTML = "タイマーが動いていないか無効なIDです"
 
             //1~4を確認
-            for (let i = 1; i < 5; i++){
+            for (let i = 1; i < 5; i++) {
                 //時間を00:00にする
-                document.getElementById("timer-"+i).innerHTML = "<h2>00:00</h2>"
+                document.getElementById("timer-" + i).innerHTML = "<h2>00:00</h2>"
             }
-        }else if (timers.length !== 0) {
+        } else if (timers.length !== 0) {
             //0~3を確認
             for (let i = 0; i < 4; i++) {
                 //タイマーの情報を取得
@@ -74,7 +74,7 @@ const task = function(){
                 let seconds = timer["seconds"]
 
                 //0秒じゃないかを確認
-                if (seconds !== 0){
+                if (seconds !== 0) {
                     //タイムスタンプを見て時間を調整
                     seconds -= (new Date().getTime() - timer["timeStamp"]) / 1000
 
@@ -87,10 +87,10 @@ const task = function(){
                 }
 
                 //時間のテキストを作成
-                const timeText = ( '0' + minute ).slice( -2 )+":"+( '0' + seconds ).slice( -2 )
+                const timeText = ('0' + minute).slice(-2) + ":" + ('0' + seconds).slice(-2)
 
                 //代入
-                document.getElementById("timer-"+(i+1)).innerHTML = "<h2>"+timeText+"</h2>"
+                document.getElementById("timer-" + (i + 1)).innerHTML = "<h2>" + timeText + "</h2>"
             }
         }
     }
