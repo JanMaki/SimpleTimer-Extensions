@@ -98,5 +98,7 @@ const task = function () {
     request.send()
 };
 
-//タスクを開始
+//タスクを1回実行
+task()
+//0.5秒ごとにタスクを開始
 setInterval(task, 500);
