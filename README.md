@@ -1,7 +1,12 @@
 # SimpleTimer-Extensions
-DiscordBot『[SimpleTimer](https://source.simpletimer.dev/)』のChrome用拡張機能です。  
+DiscordBot『[SimpleTimer](https://source.simpletimer.dev/)』のブラウザ用拡張機能です。  
 Discord上で動かしているタイマーの時間をブラウザ上で確認することができます。  
 回線などのラグで1~3秒ほどの誤差が起こる可能性があります。
+
+## 動作確認ブラウザ
+・Microsoft Edge
+・Google Chrome
+・Mozilla Firefox
 
 ## 導入方法
 ### Chromeウェブストアからの導入
