@@ -9,8 +9,8 @@ Discord上で動かしているタイマーの時間をブラウザ上で確認�
 )移動します
 2. 青色のChromeに追加ボタンを押します
 ### ファイルをダウンロードして導入（パソコンがある程度わかる方向け）
-1. GitHubのReleaseを開く
-2. 最新のバージョンの"Source code (zip)"をクリックし、ファイルをダウンロードし、解凍する
+1. GitHubの[Release](https://github.com/JanMaki/SimpleTimer-Extensions/releases/)を開く
+2. 最新のバージョン(-firefoxがついていないもの)の"Source code (zip)"をクリックし、ファイルをダウンロードし、解凍する
 #### GoogleChromeをご利用の場合
 3. Chrome右上の"︙"のアイコンを押す
 4. "その他機能"->"拡張機能"を開く
