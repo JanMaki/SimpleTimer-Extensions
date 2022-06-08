@@ -9,10 +9,13 @@ Discord上で動かしているタイマーの時間をブラウザ上で確認�
 ・Mozilla Firefox
 
 ## 導入方法
-### Chromeウェブストアからの導入
+### Chromeウェブストアからの導入（対応ブラウザ：Edge・Chrome）
 1. [ChromeウェブストアのSimpleTimer-Extentionsのページ](https://chromestore.ext.simpletimer.dev
 )移動します
-2. 青色のChromeに追加ボタンを押します
+2. 青色の"Chromeに追加"ボタンを押します
+### FirefoxBrowserADD-ONSからの導入(対応ブラウザ:Firefox)
+1. [FirefoxBrowserADD-ONSのSimpleTimer-Extentionsのページ](http://mozilla.ext.simpletimer.dev/)に移動します
+2. 青色の"Firefoxへ追加"ボタンを押します
 ### ファイルをダウンロードして導入（パソコンがある程度わかる方向け）
 1. GitHubの[Release](https://github.com/JanMaki/SimpleTimer-Extensions/releases/)を開く
 #### GoogleChromeをご利用の場合
