@@ -44,7 +44,7 @@ const task = function () {
     //リクエストを作成
     const request = new XMLHttpRequest()
     //接続の設定
-    request.open("GET", "http://163.44.249.67:8080/timers/" + id, true)
+    request.open("GET", "https://st_api.janmaki.net/timers/" + id, true)
     request.responseType = "json"
     //完了時の処理
     request.onload = function () {
