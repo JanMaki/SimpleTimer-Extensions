@@ -1,17 +1,25 @@
 # SimpleTimer-Extensions
-DiscordBot『[SimpleTimer](https://source.simpletimer.dev/)』のChrome用拡張機能です。  
+DiscordBot『[SimpleTimer](https://source.simpletimer.dev/)』のブラウザ用拡張機能です。  
 Discord上で動かしているタイマーの時間をブラウザ上で確認することができます。  
 回線などのラグで1~3秒ほどの誤差が起こる可能性があります。
 
+## 動作確認ブラウザ
+・Microsoft Edge  
+・Google Chrome  
+・Mozilla Firefox  
+
 ## 導入方法
-### Chromeウェブストアからの導入
+### Chromeウェブストアからの導入（対応ブラウザ：Edge・Chrome）
 1. [ChromeウェブストアのSimpleTimer-Extentionsのページ](https://chromestore.ext.simpletimer.dev
 )移動します
-2. 青色のChromeに追加ボタンを押します
+2. 青色の"Chromeに追加"ボタンを押します
+### FirefoxBrowserADD-ONSからの導入（対応ブラウザ：Firefox）
+1. [FirefoxBrowserADD-ONSのSimpleTimer-Extentionsのページ](http://mozilla.ext.simpletimer.dev/)に移動します
+2. 青色の"Firefoxへ追加"ボタンを押します
 ### ファイルをダウンロードして導入（パソコンがある程度わかる方向け）
-1. GitHubのReleaseを開く
-2. 最新のバージョンの"Source code (zip)"をクリックし、ファイルをダウンロードし、解凍する
+1. GitHubの[Release](https://github.com/JanMaki/SimpleTimer-Extensions/releases/)を開く
 #### GoogleChromeをご利用の場合
+2. 最新のバージョン(-firefoxがついていないもの)の"Source code (zip)"をクリックし、ファイルをダウンロードし、解凍する
 3. Chrome右上の"︙"のアイコンを押す
 4. "その他機能"->"拡張機能"を開く
 6. 右上の"デベロッパーモード"のスイッチがONになっていなかったらクリックをする
@@ -19,13 +27,20 @@ Discord上で動かしているタイマーの時間をブラウザ上で確認�
 8. 表示されたダイアログで解凍したファイルを開く
 9. エラーなどがなければ拡張機能に関する情報が表示される
 #### MicrosoftEdgeをご利用の場合
+2. 最新のバージョン(-firefoxがついていないもの)の"Source code (zip)"をクリックし、ファイルをダウンロードし、解凍する
 3. Edge右上の"…"のアイコンを押す
 4. "拡張機能"->"拡張機能の管理"を開く
 6. 左のメニューの"開発者モード"のスイッチがONになっていなかったらクリックをする
 7. "展開して読み込み"を押す
 8. 表示されたダイアログで解凍したファイルを開く
 9. エラーなどがなければ拡張機能に関する情報が表示される
-
+#### Firefoxをご利用の場合
+2. 最新のバージョンの"SimpleTimer-Extensions-x.x.x-firefox.zip"をクリックし、ファイルをダウンロードする. 
+3. Firefox右上の"≡"のアイコンを押す
+4. "アドオンとテーマ"を開く
+5. 右上の"⚙"のアイコンを押し、"ファイルからアドオンをインストール..."をクリックする
+6. 表示されたダイアログでダウンロードしたファイルを開く
+7. エラーなどがなければ拡張機能に関する情報が表示される
 
 ## 使用方法
 1. タイマーを動かすチェンネルで"/chrome"を実行し、ID（数字の羅列）を手に入れる
